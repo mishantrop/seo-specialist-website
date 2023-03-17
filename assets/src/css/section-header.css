@@ -1,9 +1,10 @@
-.block-header {
-    font-family: 'Benzin-ExtraBold';
+.section-header {
+    font-family: 'Benzin';
     font-size: 74px;
     letter-spacing: 0.03em;
     line-height: 1.2;
     text-transform: uppercase;
+    font-weight: 600;
 
     &--color {
         &-dark {

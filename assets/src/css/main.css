@@ -1,16 +1,21 @@
-@import '_media';
-@import '_variables';
-@import '_grid';
-@import '_fonts';
+@import 'media';
+@import 'variables';
+@import 'grid';
 
-@import '_block-header.css';
-@import '_certs.css';
-@import '_contacts.css';
-@import '_exp.css';
-@import '_feedback.css';
-@import '_header.css';
-@import '_skills.css';
+@import 'card.css';
+@import 'certs.css';
+@import 'contacts.css';
+@import 'exp.css';
+@import 'feedback.css';
+@import 'header-nav.css';
+@import 'header.css';
+@import 'links.css';
+@import 'section-header.css';
+@import 'section.css';
+@import 'skills.css';
 
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }

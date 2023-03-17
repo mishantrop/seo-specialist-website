@@ -62,6 +62,8 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/main.css */ "./assets/src/css/main.css");
 
+
+// eslint-disable-next-line no-console
 console.log('Hello, World');
 }();
 /******/ })()

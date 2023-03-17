@@ -10,6 +10,7 @@
     "js:build": "webpack --progress --mode=production",
     "js:lint": "./node_modules/.bin/eslint assets/templates/main/js/src/**",
     "js:watch": "webpack --watch --progress --mode=development",
+    "dev": "npm-run-all --parallel static-server js:watch",
     "prepare": "husky install"
   },
   "author": "mishantrop",
@@ -50,6 +51,7 @@
     "husky": "7.0.4",
     "import-postcss": "8.0.2",
     "mini-css-extract-plugin": "2.7.5",
+    "npm-run-all": "4.1.5",
     "postcss": "8.4.12",
     "postcss-calc": "8.2.4",
     "postcss-custom-media": "8.0.0",

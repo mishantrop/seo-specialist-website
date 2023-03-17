@@ -5,31 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SEO</title>
+    <style>
+        @font-face {
+            font-family: 'Benzin';
+            src: url('assets/fonts/Benzin-ExtraBold.eot');
+            src: local('Benzin ExtraBold'), local('Benzin-ExtraBold'),
+                url('assets/fonts/Benzin-ExtraBold.eot?#iefix') format('embedded-opentype'),
+                url('assets/fonts/Benzin-ExtraBold.woff2') format('woff2'),
+                url('assets/fonts/Benzin-ExtraBold.woff') format('woff'),
+                url('assets/fonts/Benzin-ExtraBold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Benzin';
+            src: url('assets/fonts/Benzin-Medium.eot');
+            src: local('Benzin Medium'), local('Benzin-Medium'),
+                url('assets/fonts/Benzin-Medium.eot?#iefix') format('embedded-opentype'),
+                url('assets/fonts/Benzin-Medium.woff2') format('woff2'),
+                url('assets/fonts/Benzin-Medium.woff') format('woff'),
+                url('assets/fonts/Benzin-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Benzin';
+            src: url('assets/fonts/Benzin-Bold.eot');
+            src: local('Benzin Bold'), local('Benzin-Bold'),
+                url('assets/fonts/Benzin-Bold.eot?#iefix') format('embedded-opentype'),
+                url('assets/fonts/Benzin-Bold.woff2') format('woff2'),
+                url('assets/fonts/Benzin-Bold.woff') format('woff'),
+                url('assets/fonts/Benzin-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Benzin';
+            src: url('assets/fonts/Benzin-Semibold.eot');
+            src: local('Benzin Semibold'), local('Benzin-Semibold'),
+                url('assets/fonts/Benzin-Semibold.eot?#iefix') format('embedded-opentype'),
+                url('assets/fonts/Benzin-Semibold.woff2') format('woff2'),
+                url('assets/fonts/Benzin-Semibold.woff') format('woff'),
+                url('assets/fonts/Benzin-Semibold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Benzin';
+            src: url('assets/fonts/Benzin-Regular.eot');
+            src: local('Benzin Regular'), local('Benzin-Regular'),
+                url('assets/fonts/Benzin-Regular.eot?#iefix') format('embedded-opentype'),
+                url('assets/fonts/Benzin-Regular.woff2') format('woff2'),
+                url('assets/fonts/Benzin-Regular.woff') format('woff'),
+                url('assets/fonts/Benzin-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
     <link rel="stylesheet" href="assets/main.css">
   </head>
   <body>
     <header class="header">
-        <nav>
-            Навигация
-        </nav>
-
-        <div>
-            Визитка
+        <div class="container">
+            <nav class="header-nav">
+                <a href="#">Опыт работы</a>
+                <a href="#">Мои навыки</a>
+                <a href="#">Сертификаты</a>
+                <a href="#">Кейсы и проекты</a>
+                <a href="#">Контакты</a>
+            </nav>
         </div>
 
-        <div>
-            Ссылки
+        <div class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <div class="card-hello">привет, я Иван Иванов</div>
+
+                        <div class="card-world">
+                            <div class="card-world-line-1">делаю то-то и то-то</div>
+                            <br>
+                            <div class="card-world-line-2">вторая строчка</div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card-avatar" style="background-image: url('/assets/avatar.jpg')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="links">
+                <a href="#">Написать мне</a>
+                <a href="#">watsapp</a>
+                <a href="#">скайп</a>
+                <a href="#">in</a>
+                <a href="#">тг</a>
+                <a href="#">почта</a>
+            </div>
         </div>
     </header>
 
-    <section>
+    <section class="section exp">
         <div class="container">
             <div class="row">
                 <div class="col s12 m6">
-                    Опыт работы
+                    <div class="section-header section-header--color-dark">
+                        Опыт работы
+                    </div>
                 </div>
                 <div class="col s12 m6">
-                    <ol>
+                    <ol class="exp-list">
                         <li>Знание и опыт в какой-то области</li>
                         <li>Знание и опыт в какой-то области</li>
                         <li>Знание и опыт в какой-то области</li>
@@ -49,11 +145,11 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="section skills">
         <div class="container">
             <div class="row">
                 <div class="col s12 m6">
-                    <div class="block-header block-header--color-light">Навыки</div>
+                    <div class="section-header section-header--color-light">Навыки</div>
                 </div>
                 <div class="col s12 m6">
                     <div>SEO</div>
@@ -69,23 +165,23 @@
         </div>
     </section>
 
-    <section class="certs">
+    <section class="section certs">
         <div class="container">
-            <div class="block-header block-header--color-dark">Сертификаты</div>
+            <div class="section-header section-header--color-dark">Сертификаты</div>
         </div>
     </section>
 
-    <section>
+    <section class="section contacts">
         <div class="container">
             Контакты
         </div>
     </section>
 
-    <section class="feedback">
+    <section class="section feedback">
         <div class="container">
             <div class="row">
                 <div class="col s12 m6">
-                    <div class="block-header block-header--color-light">Написать мне</div>
+                    <div class="section-header section-header--color-light">Написать мне</div>
                 </div>
                 <div class="col s12 m6">
                     Форма

@@ -1,0 +1,21 @@
+.header-nav {
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-around;
+
+    & > a {
+        color: #fff;
+        font-family: 'Benzin';
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        line-height: 100%;
+        padding: 0 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+            color: #c0ea68;
+        }
+    }
+}

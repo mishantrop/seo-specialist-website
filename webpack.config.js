@@ -1,5 +1,4 @@
 const path = require('path')
-// const webpack = require('webpack')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 // const SpeedMeasurePlugin = require('speed-measure-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
@@ -26,15 +25,6 @@ module.exports = (env, argv) => {
         module: {
             rules: [
                 {
-                    test: /\.(eot|ttf|woff|woff2)$/,
-                    use: {
-                        loader: 'file-loader',
-                        options: {
-                            outputPath: 'fonts',
-                        },
-                    },
-                },
-                {
                     test: /\.(ts|js)$/,
                     exclude: /node_modules/,
                     use: {
@@ -48,9 +38,18 @@ module.exports = (env, argv) => {
                         // 'style-loader',
                         {
                             loader: 'css-loader',
-                            options: { sourceMap: true, importLoaders: 1, modules: false },
+                            options: {
+                                sourceMap: true,
+                                importLoaders: 1,
+                                modules: false,
+                            },
                         },
-                        { loader: 'postcss-loader', options: { sourceMap: true } },
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                sourceMap: true,
+                            },
+                        },
                     ],
                 },
             ],
