@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /manager/
+Disallow: /connectors/
+Disallow: /index.php
+Disallow: /?
+Allow: /assets/components/phpthumbof/cache
+Allow: /assets/cache_image/data/images
+Host: https://_.ru/
+Sitemap: https://_.ru/sitemap.xml

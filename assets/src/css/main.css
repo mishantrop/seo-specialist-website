@@ -1,0 +1,16 @@
+@import '_media';
+@import '_variables';
+@import '_grid';
+@import '_fonts';
+
+@import '_block-header.css';
+@import '_certs.css';
+@import '_contacts.css';
+@import '_exp.css';
+@import '_feedback.css';
+@import '_header.css';
+@import '_skills.css';
+
+* {
+    box-sizing: border-box;
+}

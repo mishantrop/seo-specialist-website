@@ -1,0 +1,7 @@
+:root {
+  --font-header: 'Benzin-ExtraBold', 'Arial', 'Verdana', 'Tahoma';
+  --font-second: 'Roboto', 'Arial', 'Verdana', 'Tahoma';
+  --transition-length: 0.1s;
+
+  --font-size-a: 4.5rem;
+}
