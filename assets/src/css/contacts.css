@@ -1,3 +1,30 @@
 .contacts {
     background-color: #fff;
+
+    &-items {
+        & > a {
+            color: #1a1a1a;
+            display: inline-flex;
+            font-family: 'Benzin';
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            line-height: 1.2;
+            margin: 0 32px 48px 0;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            @media (--tablet) {
+                font-size: 42px;
+            }
+
+            @media (--desktop) {
+                font-size: 64px;
+            }
+
+            &:hover {
+                color: #6c56e3;
+            }
+        }
+    }
 }

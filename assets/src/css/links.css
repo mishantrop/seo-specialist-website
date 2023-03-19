@@ -17,5 +17,8 @@
         letter-spacing: 0.01em;
         text-decoration: none;
 
+        &:hover {
+            color: #c0ea68;
+        }
     }
 }

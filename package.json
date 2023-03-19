@@ -78,7 +78,6 @@
     "core-js": "3.29.1",
     "fslightbox": "3.4.1",
     "luminous-lightbox": "2.4.0",
-    "scroll-to-element": "2.0.3",
     "swiper": "9.1.1"
   }
 }

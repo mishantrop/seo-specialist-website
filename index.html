@@ -76,12 +76,11 @@
   <body>
     <header class="header">
         <div class="container">
-            <nav class="header-nav">
-                <a href="#">Опыт работы</a>
-                <a href="#">Мои навыки</a>
-                <a href="#">Сертификаты</a>
-                <a href="#">Кейсы и проекты</a>
-                <a href="#">Контакты</a>
+            <nav class="header-nav" id="header-nav">
+                <a href="#exp">Опыт работы</a>
+                <a href="#skills">Мои навыки</a>
+                <a href="#certs">Сертификаты</a>
+                <a href="#contacts">Контакты</a>
             </nav>
         </div>
 
@@ -106,7 +105,7 @@
 
         <div class="container">
             <div class="links">
-                <a href="#">Написать мне</a>
+                <a href="#feedback" id="feedback-link">Написать мне</a>
                 <a href="#">watsapp</a>
                 <a href="#">скайп</a>
                 <a href="#">in</a>
@@ -116,7 +115,7 @@
         </div>
     </header>
 
-    <section class="section exp">
+    <section class="section exp" data-section="exp">
         <div class="container">
             <div class="row">
                 <div class="col s12 m6">
@@ -145,46 +144,114 @@
         </div>
     </section>
 
-    <section class="section skills">
+    <section class="section skills" data-section="skills">
         <div class="container">
             <div class="row">
                 <div class="col s12 m6">
                     <div class="section-header section-header--color-light">Навыки</div>
                 </div>
                 <div class="col s12 m6">
-                    <div>SEO</div>
-                    <div>PHP</div>
-                    <div>JavaScript</div>
-                    <div>Figma</div>
-                    <div>DataScience</div>
-                    <div>MidJourney</div>
-                    <div>ChatGPT</div>
-                    <div>Како-то навык</div>
+                    <div class="skill">SEO</div>
+                    <div class="skill">PHP</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">Figma</div>
+                    <div class="skill">DataScience</div>
+                    <div class="skill">MidJourney</div>
+                    <div class="skill">ChatGPT</div>
+                    <div class="skill">Како-то навык</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section certs">
+    <section class="section certs" data-section="certs">
         <div class="container">
-            <div class="section-header section-header--color-dark">Сертификаты</div>
+            <div class="section-header section-header--color-dark">
+                Сертификаты
+            </div>
         </div>
     </section>
 
-    <section class="section contacts">
+    <section class="section contacts" data-section="contacts">
         <div class="container">
-            Контакты
+            <div class="section-label">
+                Контакты
+            </div>
+
+            <div class="contacts-items">
+                <a href="mailto:example@yandex.com">
+                    example@yandex.com
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H13M13 1V13M13 1L1 13" stroke="#1A1A1A" stroke-width="2"/>
+                    </svg>
+                </a>
+                <a href="skype">
+                    skype
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H13M13 1V13M13 1L1 13" stroke="#1A1A1A" stroke-width="2"/>
+                    </svg>
+                </a>
+                <a href="whatsapp">
+                    whatsapp
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H13M13 1V13M13 1L1 13" stroke="#1A1A1A" stroke-width="2"/>
+                    </svg>
+                </a>
+                <a href="whatsapp">
+                    whatsapp
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H13M13 1V13M13 1L1 13" stroke="#1A1A1A" stroke-width="2"/>
+                    </svg>
+                </a>
+                <a href="linkedin">
+                    linkedin
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H13M13 1V13M13 1L1 13" stroke="#1A1A1A" stroke-width="2"/>
+                    </svg>
+                </a>
+            </div>
         </div>
     </section>
 
-    <section class="section feedback">
+    <section class="section feedback" data-section="feedback">
         <div class="container">
             <div class="row">
                 <div class="col s12 m6">
                     <div class="section-header section-header--color-light">Написать мне</div>
                 </div>
                 <div class="col s12 m6">
-                    Форма
+                    <form action="" method="post">
+                        <fieldset>
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        placeholder="Ваше имя"
+                                        required
+                                    >
+                                </div>
+                                <div class="col s12 m6">
+                                    <input
+                                        type="text"
+                                        name="contacts"
+                                        placeholder="Ваши контакты"
+                                        required
+                                    >
+                                </div>
+                                <div class="col s12">
+                                    <textarea
+                                        name="text"
+                                        placeholder="Что вас интересует"
+                                        required
+                                    ></textarea>
+                                </div>
+                                <div class="col s12 m8 l7">
+                                    <button type="submit">Отправить</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
