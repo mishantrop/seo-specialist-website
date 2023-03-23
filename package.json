@@ -10,7 +10,7 @@
     "js:build": "webpack --progress --mode=production",
     "js:lint": "./node_modules/.bin/eslint assets/templates/main/js/src/**",
     "js:watch": "webpack --watch --progress --mode=development",
-    "dev": "npm-run-all --parallel static-server js:watch",
+    "start": "npm-run-all --parallel static-server js:watch",
     "prepare": "husky install"
   },
   "author": "mishantrop",
@@ -78,6 +78,7 @@
     "core-js": "3.29.1",
     "fslightbox": "3.4.1",
     "luminous-lightbox": "2.4.0",
-    "swiper": "9.1.1"
+    "swiper": "9.1.1",
+    "tiny-slider": "2.9.4"
   }
 }

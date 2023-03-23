@@ -248,6 +248,46 @@
 .certs {
     background-color: #c0ea68;
 }
+.certs-slider {
+}
+.cert {
+    background-color: #fff;
+    border-radius: 20px 50px 20px 20px;
+    cursor: pointer;
+    display: block;
+    padding: 40px;
+    text-decoration: none;
+    -webkit-transition: -webkit-box-shadow 0.2s linear;
+    transition: -webkit-box-shadow 0.2s linear;
+    transition: box-shadow 0.2s linear;
+    transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
+}
+.cert:hover {
+        -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+                box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+.cert-wrapper {
+        padding: 10px;
+    }
+.cert-company {
+        margin: 0 0 100px;
+    }
+.cert-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        margin: 0 0 10px;
+    }
+.cert-fio {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.3;
+        margin: 0 0 50px;
+    }
+.cert-link {
+        color: #6c56e3;
+    }
 .contacts {
     background-color: #fff;
 }
@@ -296,6 +336,98 @@
 .feedback {
     background-color: #145a51;
 }
+.feedback-input {
+        background-color: #2B6A62;
+        border: 0;
+        border-radius: 140px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        padding: 32px;
+        margin: 0 0 16px;
+        width: 100%;
+    }
+.feedback-input::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #bbb;
+            opacity: 1; /* Firefox */
+        }
+.feedback-input::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #bbb;
+            opacity: 1; /* Firefox */
+        }
+.feedback-input:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #bbb;
+            opacity: 1; /* Firefox */
+        }
+.feedback-input::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #bbb;
+            opacity: 1; /* Firefox */
+        }
+.feedback-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #bbb;
+            opacity: 1; /* Firefox */
+        }
+.feedback-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #bbb;
+        }
+.feedback-input::-ms-input-placeholder { /* Microsoft Edge */
+            color: #bbb;
+        }
+.feedback-textarea {
+        background-color: #2B6A62;
+        border: 0;
+        border-radius: 140px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        padding: 32px;
+        margin: 0 0 16px;
+        width: 100%;
+    }
+.feedback-textarea::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #bbb;
+            opacity: 1; /* Firefox */
+        }
+.feedback-textarea::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #bbb;
+            opacity: 1; /* Firefox */
+        }
+.feedback-textarea:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #bbb;
+            opacity: 1; /* Firefox */
+        }
+.feedback-textarea::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #bbb;
+            opacity: 1; /* Firefox */
+        }
+.feedback-textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #bbb;
+            opacity: 1; /* Firefox */
+        }
+.feedback-textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #bbb;
+        }
+.feedback-textarea::-ms-input-placeholder { /* Microsoft Edge */
+            color: #bbb;
+        }
+.feedback-submit {
+        background-color: #c0ea68;
+        border: 0;
+        border-radius: 58px;
+        padding: 30px 90px 24px;
+        font-family: 'Benzin';
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.5;
+        padding: 32px;
+        width: 100%;
+        cursor: pointer;
+    }
+.feedback-submit:hover {
+            background-color: #89af39;
+        }
 .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;

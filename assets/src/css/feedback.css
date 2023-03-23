@@ -1,3 +1,73 @@
 .feedback {
     background-color: #145a51;
+
+    &-input {
+        background-color: #2B6A62;
+        border: 0;
+        border-radius: 140px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        padding: 32px;
+        margin: 0 0 16px;
+        width: 100%;
+
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #bbb;
+            opacity: 1; /* Firefox */
+        }
+
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #bbb;
+        }
+
+        &::-ms-input-placeholder { /* Microsoft Edge */
+            color: #bbb;
+        }
+    }
+
+    &-textarea {
+        background-color: #2B6A62;
+        border: 0;
+        border-radius: 140px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        padding: 32px;
+        margin: 0 0 16px;
+        width: 100%;
+
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #bbb;
+            opacity: 1; /* Firefox */
+        }
+
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #bbb;
+        }
+
+        &::-ms-input-placeholder { /* Microsoft Edge */
+            color: #bbb;
+        }
+    }
+
+    &-submit {
+        background-color: #c0ea68;
+        border: 0;
+        border-radius: 58px;
+        padding: 30px 90px 24px;
+        font-family: 'Benzin';
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.5;
+        padding: 32px;
+        width: 100%;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #89af39;
+        }
+    }
 }
