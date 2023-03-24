@@ -1,7 +1,12 @@
 .card {
     background-color: #fff;
     border-radius: 40px;
-    padding: 80px;
+    padding: 20px;
+    position: relative;
+
+    @media (--tablet) {
+        padding: 80px;
+    }
 
     & > .row {
         display: flex;
@@ -16,7 +21,28 @@
         aspect-ratio: 1 / 1;
         background-size: cover;
         border-radius: 50%;
-        max-width: 100%;
+        max-width: 60%;
+        margin: 32px auto 0;
+
+        @media (--tablet) {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        @media (--desktop) {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+
+    &-info {
+        padding: 20px 0 0;
+        width: 100%;
+
+        @media (--tablet) {
+            padding: 0;
+            width: 80%;
+        }
     }
 
     &-hello {
@@ -30,28 +56,33 @@
         font-style: normal;
         font-weight: 700;
         letter-spacing: 0.01em;
-        margin: 0 0 100px;
+        margin: 0;
+        max-width: 80%;
         padding: 4px 16px;
+        position: absolute;
         transform: rotate(-2deg);
     }
 
     &-world {
+        background-color: #c0ea68;
+        border-radius: 14px;
         color: #1a1a1a;
         font-family: 'Benzin';
-        font-size: 45px;
+        font-size: 24px;
         font-weight: 700;
         line-height: 1.2;
+        margin: 16px 0 0;
+        padding: 10px;
+        transform: rotate(1deg);
 
-        &-line-1 {
-            background-color: #c0ea68;
-            display: inline-block;
-            padding: 10px;
+        @media (--tablet) {
+            font-size: 32px;
+            margin: 128px 0 0;
         }
 
-        &-line-2 {
-            background-color: #c0ea68;
-            display: inline-block;
-            padding: 10px;
+        @media (--desktop) {
+            font-size: 45px;
+            margin: 128px 0 0;
         }
     }
 }

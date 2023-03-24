@@ -2,24 +2,29 @@
     background-color: #fff;
 
     &-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+
         & > a {
             color: #1a1a1a;
             display: inline-flex;
             font-family: 'Benzin';
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 600;
             letter-spacing: 0.03em;
             line-height: 1.2;
-            margin: 0 32px 48px 0;
             text-decoration: none;
             text-transform: uppercase;
+            transition: color 0.2s linear;
+            word-break: break-word;
 
             @media (--tablet) {
-                font-size: 42px;
+                font-size: 32px;
             }
 
             @media (--desktop) {
-                font-size: 64px;
+                font-size: 40px;
             }
 
             &:hover {

@@ -1,10 +1,20 @@
 .section-header {
     font-family: 'Benzin';
-    font-size: 74px;
+    font-size: 28px;
+    font-weight: 600;
     letter-spacing: 0.03em;
     line-height: 1.2;
+    margin: 0 0 16px;
     text-transform: uppercase;
-    font-weight: 600;
+    word-break: break-word;
+
+    @media (--tablet) {
+        font-size: 48px;
+    }
+
+    @media (--desktop) {
+        font-size: 64px;
+    }
 
     &--color {
         &-dark {

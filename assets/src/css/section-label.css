@@ -1,7 +1,18 @@
 .section-label {
     color: #6c56e3;
     font-family: 'Benzin';
-    font-size: 24px;
+    font-size: 20px;
     line-height: 100%;
-    margin: 0 0 80px;
+    margin: 0 0 20px;
+    word-break: break-all;
+
+    @media (--tablet) {
+        font-size: 24px;
+        margin: 0 0 32px;
+    }
+
+    @media (--desktop) {
+        font-size: 24px;
+        margin: 0 0 48px;
+    }
 }

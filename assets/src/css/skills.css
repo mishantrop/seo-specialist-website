@@ -2,20 +2,24 @@
     background-color: #145a51;
 }
 
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
 .skill {
-    align-items: center;
     background-color: #fff;
     color: #111;
     border-radius: 30px;
     cursor: default;
-    display: inline-flex;
     font-family: 'Gilroy', Verdana, Tahoma, Arial;
-    font-size: 13px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     letter-spacing: -0.02em;
     line-height: 1.2;
-    margin: 0 16px 16px;
-    padding: 16px;
+    padding: 16px 32px;
     text-align: center;
 }
