@@ -7,7 +7,7 @@
     "static-server": "php -S 127.0.0.1:8080",
     "js:analyze": "webpack --progress --env ANALYZE=1 --mode=development",
     "js:analyze:report": "webpack --progress --env ANALYZE=1 ANALYZENEEDREPORT=1 ANALYZERMODE='static' --mode=development",
-    "js:build": "webpack --progress --mode=production",
+    "build": "webpack --progress --mode=production",
     "js:lint": "./node_modules/.bin/eslint assets/templates/main/js/src/**",
     "js:watch": "webpack --watch --progress --mode=development",
     "start": "npm-run-all --parallel static-server js:watch",

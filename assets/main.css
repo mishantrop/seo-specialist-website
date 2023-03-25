@@ -1,6 +1,3 @@
-/*!*****************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./assets/src/css/main.css ***!
-  \*****************************************************************************************************************************************************************************/
 .row .col[class*=pull-],
 .row .col[class*=push-] {
   position: relative;
@@ -391,7 +388,8 @@
 .exp {
     background-color: #fff;
 }
-.exp-list {
+.exp > ol,
+    .exp > ul {
         color: #111;
         font-family: 'Gilroy', Tahoma;
         font-size: 24px;
@@ -400,7 +398,7 @@
         line-height: 1.3;
         list-style: none;
     }
-.exp-list > li {
+.exp > ol > li, .exp > ul > li {
             margin: 0 0 16px;
         }
 .feedback {
@@ -644,31 +642,33 @@
 .skills {
     background-color: #145a51;
 }
-.skill-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 10px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-}
-.skill {
-    background-color: #fff;
-    color: #111;
-    border-radius: 30px;
-    cursor: default;
-    font-family: 'Gilroy', Verdana, Tahoma, Arial;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
-    padding: 16px 32px;
-    text-align: center;
-}
+.skill-items > ol,
+    .skill-items > ul {
+        list-style: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        gap: 10px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+.skill-items > ol > li, .skill-items > ul > li {
+            background-color: #fff;
+            color: #111;
+            border-radius: 30px;
+            cursor: default;
+            font-family: 'Gilroy', Verdana, Tahoma, Arial;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            padding: 16px 32px;
+            text-align: center;
+        }
 * {
     padding: 0;
     margin: 0;
@@ -679,5 +679,3 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-/*# sourceMappingURL=main.css.map*/

@@ -86,7 +86,7 @@ const initFeedbackForm = () => {
 }
 
 const skillsWidth = () => {
-    const skills = document.querySelectorAll('.skill')
+    const skills = document.querySelectorAll('.skill-items li')
 
     skills.forEach((skill, idx) => {
         if (window.matchMedia('(min-width: 769px)').matches) {
