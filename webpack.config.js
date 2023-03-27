@@ -1,13 +1,11 @@
 const path = require('path')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
-// const SpeedMeasurePlugin = require('speed-measure-webpack-plugin')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-
-// const smp = new SpeedMeasurePlugin()
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = (env, argv) => {
     const isDev = argv.mode === 'development'
-
     const isAnalyzeEnabled = env.ANALYZE === '1'
     const isAnalyzeNeedReport = env.ANALYZENEEDREPORT === '1'
     const analyzerMode = env.ANALYZERMODE || 'json'
@@ -39,7 +37,7 @@ module.exports = (env, argv) => {
                         {
                             loader: 'css-loader',
                             options: {
-                                sourceMap: true,
+                                sourceMap: isDev,
                                 importLoaders: 1,
                                 modules: false,
                             },
@@ -47,11 +45,18 @@ module.exports = (env, argv) => {
                         {
                             loader: 'postcss-loader',
                             options: {
-                                sourceMap: true,
+                                sourceMap: isDev,
                             },
                         },
                     ],
                 },
+            ],
+        },
+        optimization: {
+            minimize: true,
+            minimizer: [
+                ...isDev ? [] : [ new TerserPlugin() ],
+                ...isDev ? [] : [ new CssMinimizerPlugin() ],
             ],
         },
         plugins: [

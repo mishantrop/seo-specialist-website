@@ -12,7 +12,7 @@ const initScrollNavigation = () => {
             event.preventDefault()
             const section = document.querySelector(`[data-section="${(event.target?.hash || '').replace('#', '')}"]`)
 
-            section?.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+            section?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
         })
     })
 
@@ -20,7 +20,7 @@ const initScrollNavigation = () => {
     feedbackLink.addEventListener('click', (event) => {
         event.preventDefault()
         const section = document.querySelector('[data-section="feedback"]')
-        section?.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+        section?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
     })
 }
 

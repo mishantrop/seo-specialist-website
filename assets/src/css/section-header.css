@@ -9,11 +9,11 @@
     word-break: break-word;
 
     @media (--tablet) {
-        font-size: 48px;
+        font-size: 36px;
     }
 
     @media (--desktop) {
-        font-size: 64px;
+        font-size: 48px;
     }
 
     &--color {

@@ -46,6 +46,11 @@
 
     &-company {
         margin: 0 0 32px;
+
+        & > svg {
+            height: 32px;
+            width: auto;
+        }
     }
 
     &-title {
@@ -65,5 +70,15 @@
 
     &-link {
         color: #6c56e3;
+        display: flex;
+        flex-wrap: nowrap;
+
+        & > svg {
+            margin: 0 0 0 12px;
+
+            & > path {
+                stroke: #6c56e3;
+            }
+        }
     }
 }
