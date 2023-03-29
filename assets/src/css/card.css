@@ -4,6 +4,10 @@
     padding: 20px;
     position: relative;
 
+    @media (prefers-color-scheme: dark) {
+        background-color: #1a1a1a;
+    }
+
     @media (--tablet) {
         padding: 80px;
     }
@@ -22,7 +26,7 @@
         background-size: cover;
         border-radius: 50%;
         max-width: 60%;
-        margin: 32px auto 0;
+        margin: 42px auto 0;
 
         @media (--tablet) {
             margin: 0 auto;
@@ -52,7 +56,7 @@
         color: #fff;
         display: inline-block;
         font-family: 'Gilroy', Tahoma;
-        font-size: 24px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         letter-spacing: 0.01em;
@@ -61,6 +65,14 @@
         padding: 4px 16px;
         position: absolute;
         transform: rotate(-2deg);
+
+        @media (--tablet) {
+            font-size: 24px;
+        }
+
+        @media (--desktop) {
+            font-size: 24px;
+        }
     }
 
     &-world {
@@ -68,15 +80,15 @@
         border-radius: 14px;
         color: #1a1a1a;
         font-family: 'Benzin';
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
         line-height: 1.2;
-        margin: 16px 0 0;
+        margin: 0;
         padding: 10px;
         transform: rotate(1deg);
 
         @media (--tablet) {
-            font-size: 32px;
+            font-size: 24px;
             margin: 128px 0 0;
         }
 

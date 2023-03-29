@@ -1,6 +1,10 @@
 .exp {
     background-color: #fff;
 
+    @media (prefers-color-scheme: dark) {
+        background-color: #1a1a1a;
+    }
+
     & ol,
     & ul {
         color: #111;
@@ -10,6 +14,10 @@
         font-weight: 500;
         line-height: 1.3;
         list-style: none;
+
+        @media (prefers-color-scheme: dark) {
+            color: #eee;
+        }
 
         @media (--tablet) {
             font-size: 18px;
