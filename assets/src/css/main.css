@@ -9,6 +9,7 @@
 @import 'feedback.css';
 @import 'header-lang.css';
 @import 'header-nav.css';
+@import 'header-nav-mobile.css';
 @import 'header-top.css';
 @import 'header.css';
 @import 'links.css';
@@ -24,5 +25,5 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-famiy);
 }

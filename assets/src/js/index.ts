@@ -4,6 +4,11 @@ import { tns } from 'tiny-slider/src/tiny-slider'
 
 import '../css/main.css'
 
+const buttonOpen = document.getElementById('header-nav-mobile-toggler')
+const buttonClose = document.getElementById('header-nav-mobile-closer')
+const linksWrapper = document.querySelector('.header-nav-mobile-links')
+const body = document.querySelector('body')
+
 const initScrollNavigation = () => {
     const links = document.querySelectorAll('#header-nav a')
 
@@ -21,6 +26,35 @@ const initScrollNavigation = () => {
         event.preventDefault()
         const section = document.querySelector('[data-section="feedback"]')
         section?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
+    })
+}
+
+const openMobileMenu = () => {
+    body.style.overflow = 'hidden'
+    linksWrapper.classList.add('header-nav-mobile-links--visible')
+    buttonClose.classList.add('header-nav-mobile-closer--visible')
+}
+
+const closeMobileMenu = () => {
+    body.style.overflow = ''
+    linksWrapper.classList.remove('header-nav-mobile-links--visible')
+    buttonClose.classList.remove('header-nav-mobile-closer--visible')
+}
+
+const initScrollNavigationMobile = () => {
+    const links = document.querySelectorAll('#header-nav-mobile a')
+
+    links.forEach((link) => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault()
+
+            closeMobileMenu()
+
+            setTimeout(() => {
+                const section = document.querySelector(`[data-section="${(event.target?.hash || '').replace('#', '')}"]`)
+                section?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
+            }, 1)
+        })
     })
 }
 
@@ -58,24 +92,31 @@ const initCertsSlider = () => {
 const initFeedbackForm = () => {
     const form: HTMLFormElement | null = document.querySelector('#feedback-form')
     if (form !== null) {
+        const buttonSubmit = form.querySelector('button[type="submit"')
         const successElement = document.querySelector('#feedback-success')
         const errorElement = document.querySelector('#feedback-error')
 
         form.addEventListener('submit', (event) => {
             event.preventDefault()
+            buttonSubmit.setAttribute('disabled', 'disabled')
             const formData = new FormData(form)
             axios
                 .post(
                     form.getAttribute('action'),
                     formData,
                 )
-                .then((response) => {
-                    console.log(response)
+                .then(() => {
+                    setTimeout(() => {
+                        buttonSubmit.removeAttribute('disabled')
+                    }, 1_000)
                     successElement.style.display = 'block'
                     errorElement.style.display = 'none'
                 })
                 .catch((exception: Error) => {
                     console.error(exception)
+                    setTimeout(() => {
+                        buttonSubmit.removeAttribute('disabled')
+                    }, 1_000)
                     successElement.style.display = 'none'
                     errorElement.style.display = 'block'
                 })
@@ -97,7 +138,19 @@ const skillsWidth = () => {
     })
 }
 
+const initMobileMenu = () => {
+    buttonOpen.addEventListener('click', () => {
+        openMobileMenu()
+    })
+
+    buttonClose.addEventListener('click', () => {
+        closeMobileMenu()
+    })
+}
+
 initScrollNavigation()
+initScrollNavigationMobile()
+initMobileMenu()
 initCertsSlider()
 initFeedbackForm()
 skillsWidth()

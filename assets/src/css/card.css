@@ -1,4 +1,21 @@
-.card {
+@keyframes pulse--white {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+      transform: scale(0.90);
+    }
+
+    70% {
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+      transform: scale(1);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+      transform: scale(0.90);
+    }
+  }
+
+  .card {
     background-color: #fff;
     border-radius: 40px;
     padding: 20px;
@@ -9,6 +26,10 @@
     }
 
     @media (--tablet) {
+        padding: 40px;
+    }
+
+    @media (--desktop) {
         padding: 80px;
     }
 
@@ -22,6 +43,7 @@
     }
 
     &-avatar {
+        /* animation: pulse--white 1s infinite; */
         aspect-ratio: 1 / 1;
         background-size: cover;
         border-radius: 50%;
@@ -51,11 +73,11 @@
 
     &-hello {
         align-items: center;
-        background: #6c56e3;
+        background-color: var(--color-violence);
         border-radius: 14px;
         color: #fff;
         display: inline-block;
-        font-family: 'Gilroy', Tahoma;
+        font-family: var(--font-famiy);
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
@@ -76,10 +98,10 @@
     }
 
     &-world {
-        background-color: #c0ea68;
+        background-color: var(--color-yellow);
         border-radius: 14px;
         color: #1a1a1a;
-        font-family: 'Benzin';
+        font-family: var(--font-header);
         font-size: 22px;
         font-weight: 700;
         line-height: 1.2;
@@ -93,7 +115,7 @@
         }
 
         @media (--desktop) {
-            font-size: 45px;
+            font-size: 32px;
             margin: 128px 0 0;
         }
     }

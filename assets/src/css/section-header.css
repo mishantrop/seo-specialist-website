@@ -1,5 +1,5 @@
 .section-header {
-    font-family: 'Benzin';
+    font-family: var(--font-header);
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.03em;
@@ -30,6 +30,9 @@
             @media (prefers-color-scheme: dark) {
                 color: #111;
             }
+        }
+        &-light--force {
+            color: #eee;
         }
     }
 }

@@ -60,14 +60,19 @@
         &::-ms-input-placeholder {
             color: #bbb;
         }
+
+        &:active,
+        &:focus {
+            background-color: #347e75;
+        }
     }
 
     &-submit {
-        background-color: #c0ea68;
+        background-color: var(--color-yellow);
         border: 0;
         border-radius: 58px;
         padding: 30px 90px 24px;
-        font-family: 'Benzin';
+        font-family: var(--font-header);
         font-size: 24px;
         font-weight: bold;
         line-height: 1.5;

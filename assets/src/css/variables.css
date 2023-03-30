@@ -1,7 +1,8 @@
 :root {
   --font-header: 'Benzin-ExtraBold', 'Arial', 'Verdana', 'Tahoma';
-  --font-second: 'Roboto', 'Arial', 'Verdana', 'Tahoma';
+  --font-famiy: Verdana, Tahoma, Helvetica, Arial, sans-serif;
   --transition-length: 0.1s;
 
-  --font-size-a: 4.5rem;
+  --color-yellow: #c0ea68;
+  --color-violence: #6c56e3;
 }

@@ -1,27 +1,29 @@
 .header-lang {
-    display: none;
+    display: flex;
     gap: 10px;
     margin: 0 0 16px;
     padding: 0;
     justify-content: space-evenly;
 
-    @media (--tablet) {
-        display: flex;
-    }
-
     & > a {
         color: #fff;
-        font-family: 'Benzin';
+        font-family: var(--font-header);
         font-size: 14px;
-        font-weight: bold;
+        font-weight: 400;
         letter-spacing: 0.1em;
         line-height: 100%;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding: 12px 0;
         text-transform: uppercase;
         text-decoration: none;
+        transition: color 0.2s linear;
 
         @media (--tablet) {
+            font-weight: 500;
+            padding: 24px 8px;
+        }
+
+        @media (--desktop) {
+            font-weight: bold;
             padding: 24px 10px;
         }
 
@@ -30,7 +32,7 @@
         }
 
         &:hover {
-            color: #c0ea68;
+            color: var(--color-yellow);
         }
     }
 }

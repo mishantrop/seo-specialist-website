@@ -1,6 +1,6 @@
 .section-label {
-    color: #6c56e3;
-    font-family: 'Benzin';
+    color: var(--color-violence);
+    font-family: var(--font-header);
     font-size: 20px;
     line-height: 100%;
     margin: 0 0 20px;

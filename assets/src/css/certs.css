@@ -1,5 +1,5 @@
 .certs {
-    background-color: #c0ea68;
+    background-color: var(--color-yellow);
 
     @media (prefers-color-scheme: dark) {
         background-color: #395400;
@@ -7,7 +7,7 @@
 
     &-text {
         color: #111;
-        font-family: 'Gilroy', Tahoma;
+        font-family: var(--font-famiy);
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -33,23 +33,41 @@
     cursor: pointer;
     color: #222;
     display: block;
-    padding: 40px;
+    padding: 20px;
     position: relative;
     text-decoration: none;
-    transition: box-shadow 0.2s linear;
+    top: 0;
+    transition: box-shadow 0.2s linear, top 0.2s linear;
     -webkit-user-drag: none;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
 
+    @media (--tablet) {
+        padding: 30px;
+    }
+
+    @media (--desktop) {
+        padding: 40px;
+    }
+
     &:hover {
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+        top: -5px;
     }
 
     & > svg {
         position: absolute;
         top: 28px;
         right: 28px;
+
+        & > path {
+            fill: var(--color-yellow);
+
+            @media (prefers-color-scheme: dark) {
+                fill: #395400;
+            }
+        }
     }
 
     &-wrapper {
@@ -68,9 +86,17 @@
     &-title {
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 17px;
         line-height: 100%;
         margin: 0 0 10px;
+
+        @media (--tablet) {
+            font-size: 17px;
+        }
+
+        @media (--desktop) {
+            font-size: 24px;
+        }
     }
 
     &-fio {
@@ -81,7 +107,7 @@
     }
 
     &-link {
-        color: #6c56e3;
+        color: var(--color-violence);
         display: flex;
         flex-wrap: nowrap;
 
@@ -89,7 +115,7 @@
             margin: 0 0 0 12px;
 
             & > path {
-                stroke: #6c56e3;
+                stroke: var(--color-violence);
             }
         }
     }
